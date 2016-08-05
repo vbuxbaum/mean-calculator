@@ -40,8 +40,8 @@ module.exports = function(app) {
 	// calculate and GET the result of an equation
 	// can be modified in the future to accept other functions by parsing a for MATH functions.
 	app.get('/calculate', function(req, res) {
-		var val1 =parseInt(req.query.val1, 10);
-		var val2 =parseInt(req.query.val2, 10);
+		var val1 =parseFloat(req.query.val1, 10);
+		var val2 =parseFloat(req.query.val2, 10);
 		var op =req.query.op.charAt(0); //extra careful on eval due to security concern
 		console.log("calculating:", val1, op, val2);
 		var result =eval(val1+op+val2);
