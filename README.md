@@ -16,6 +16,8 @@ Install all listed dependencies by navigating to the repository and running the 
 
 This will install [**Express**](http://expressjs.com/4x/api.html) along with the other packages in the package.json file. 
 
+### Testing
+make sure that selenium webdriver and chrome driver are both in your path.
 <Enter>
 <Enter>
 <Enter>

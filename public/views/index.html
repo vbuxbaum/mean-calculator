@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
 <head>
-	<title>MEAN Skeleton Page</title>
+	<title>MEAN Calculator</title>
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
@@ -20,16 +20,17 @@
 				<form name="calculate" ng-submit="calculate.$valid && submitted && calculateResult()" novalidate>
 					<div class="form-group">
 						<div class="col-sm-12">
-							<input type="number" ng-model="formData.val1">
-							<select  ng-model="formData.op">
+							<input type="number" ng-model="formData.val1" name="val1">
+							<select  ng-model="formData.op" name="op">
 								<option ng-repeat="operator in operations">{{operator.value}}</option>
 							</select>
-							<input type="number" ng-model="formData.val2"> = {{result}}
+							<input type="number" ng-model="formData.val2" name="val2">
+							<div name='calc'> = {{result}}</div>
 						</div>
 					</div>
 					<p></p>
 					<!-- Sets the value submitted to true to help with form validation -->
-					<button type="submit" class="btn btn-primary btn-lg" ng-click="submitted=true">Submit
+					<button name='calcButton' type="submit" class="btn btn-primary btn-lg" ng-click="submitted=true">Submit
 					</button>
 				</form>
 			</div>

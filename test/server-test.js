@@ -67,6 +67,14 @@ describe('api', function() {
         res.body.should.have.property('result');
         res.body.result.should.equal(1.5);
       });
+    chai.request(server)
+      .get('/calculate/?op=%2F&val1=3.6&val2=1.2')
+      .end(function(err, res){
+        res.should.have.status(200);
+        res.should.be.json;
+        res.body.should.have.property('result');
+        res.body.result.should.equal(3);
+      });
     done();
   });  
 });

@@ -9,9 +9,11 @@
 		"body-parser" : "latest",
 		"chai" : "latest",
 		"chai-http" : "latest",
+		"mathjs": "latest",
 		"morgan" : "latest",
 		"mongoose" : "latest",
-		"request" : "latest"
+		"request" : "latest",
+		"selenium-webdriver" : "latest"
 	},
 	"repository": {
 			"type" : "git",
