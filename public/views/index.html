@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>MEAN Skeleton Page</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+	<script type="text/javascript" src="../controllers/app.js"></script>
+</head>
+
+<body ng-controller="appCtrl">
+	<div class="container">
+		<div class="jumbotron text-center">
+			<h1>Calculator</h1>
+		</div>
+		<!-- FORM TO PERFORM CALCULATIONS-->
+		<div id="model-form" class="form-horizontal">
+			<div class="col-sm-8 col-sm-offset-2 text-center" id="name-field">
+				<!-- Only posts to Angular's calculateResult if calculate form is valid and was submitted -->
+				<form name="calculate" ng-submit="calculate.$valid && submitted && calculateResult()" novalidate>
+					<div class="form-group">
+						<div class="col-sm-12">
+							<input type="number" ng-model="formData.val1">
+							<select  ng-model="formData.op">
+								<option ng-repeat="operator in operations">{{operator.value}}</option>
+							</select>
+							<input type="number" ng-model="formData.val2"> = {{result}}
+						</div>
+					</div>
+					<p></p>
+					<!-- Sets the value submitted to true to help with form validation -->
+					<button type="submit" class="btn btn-primary btn-lg" ng-click="submitted=true">Submit
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
