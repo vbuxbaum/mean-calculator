@@ -1,3 +1,5 @@
+"use strict";
+
 // Export the controller
 var myApp = angular.module('myApp', []);
 

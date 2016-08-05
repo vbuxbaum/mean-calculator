@@ -1,3 +1,5 @@
+"use strict";
+
 // Module for API Routes (serving JSON)
 module.exports = function(app) {
 	var mongoose = require('mongoose'),

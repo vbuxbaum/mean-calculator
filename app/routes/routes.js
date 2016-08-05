@@ -1,3 +1,5 @@
+"use strict";
+
 // Exported routes to Node
 // They respect a last declared hiearchy, so the ones defined at
 // the bottom may override the ones at the top.
