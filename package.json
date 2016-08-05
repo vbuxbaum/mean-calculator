@@ -1,18 +1,19 @@
 {
-	"name"         : "mean-calculator",
-	"version"      : "0.1.0",
-	"description"  : "Calculator done with the MEAN stack",
-	"main"         : "server.js",
-	"author"       : "Andrew Petrucci",
+	"name" : "mean-calculator",
+	"version" : "0.1.0",
+	"description" : "Calculator done with the MEAN stack",
+	"main" : "server.js",
+	"author" : "Andrew Petrucci",
 	"dependencies" : {
-		"express"    : "latest",
-		"body-parser": "latest",
-		"morgan"		 : "latest",
-		"mongoose"	 : "latest",
-		"request"	 : "latest"
+		"express" : "latest",
+		"body-parser" : "latest",
+		"chai" : "latest",
+		"chai-http" : "latest",
+		"morgan" : "latest",
+		"mongoose" : "latest",
+		"request" : "latest"
 	},
-	"repository"   :
-		{
+	"repository": {
 			"type" : "git",
 			"url" : "git@github.com:AndrewPetrucci/mean-calculator.git"
 		}
