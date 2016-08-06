@@ -25,12 +25,12 @@
 								<option ng-repeat="operator in operations">{{operator.value}}</option>
 							</select>
 							<input type="number" ng-model="formData.val2" name="val2">
-							<td name='calc'> = {{result}}</td>
+							<div name='calc'> = {{result}}</div>
 						</div>
 					</div>
 					<p></p>
 					<!-- Sets the value submitted to true to help with form validation -->
-					<button name='calcButton' type="submit" class="btn btn-primary btn-lg" ng-click="submitted=true">Calculate
+					<button name='calcButton' type="submit" class="btn btn-primary btn-lg" ng-click="submitted=true">Submit
 					</button>
 				</form>
 			</div>
