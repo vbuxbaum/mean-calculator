@@ -1,0 +1,22 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "description": "create app.json file to config review app in heroku",
+  "env": {
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "mean-calculator",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
